@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.domoticz.scenes" name="Domoticz Scenes" version="0.0.8" provider-name="Paul VW">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+     <import addon="script.module.requests"   version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="nl_NL">Start scenes in Domoticz vanuit Kodi</summary>
+    <description lang="nl_NL">Start scenes in Domoticz vanuit Kodi. </description>
+    <disclaimer lang="nl_NL">Disclaimer</disclaimer>
+    <language>nl</language> <!-- the language of the videos or other content the plugin provides, may be omitted in case the addon does not provide any content -->
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=xxxx</forum> <!-- may be omitted  -->
+    <website>http://myplugin.com</website> <!-- the url of the website that contains the videos (or the official website of your plugin). May be omitted.  -->
+    <email>you@youremail.com</email> <!-- may be omitted  -->
+    <source>http://github.com/you/plugin.addon.id</source>
+    <news>v0.0.1 (22/03/2021)
+      [new] beta Release
+      v0.0.8 (24/03/2021)
+      [new] Support for scenes, switches and favorites
+    </news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
