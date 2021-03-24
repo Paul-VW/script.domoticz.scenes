@@ -260,6 +260,7 @@ elif str(domoticz_group) == '2':
     optionsList = get_list(optionsDict=optionsDict)
 
 else:
+    show_notification("Unknown grouping. Using all switches in stead")
     optionsDict = get_all_switches(host=domoticz_host, port=domoticz_port, useSsl=False)
     optionsList = get_list(optionsDict=optionsDict)
 
