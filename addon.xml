@@ -11,7 +11,6 @@
     <summary lang="nl_NL">Start scenes in Domoticz vanuit Kodi</summary>
     <description lang="nl_NL">Start scenes in Domoticz vanuit Kodi. </description>
     <disclaimer lang="nl_NL">Disclaimer</disclaimer>
-    <language>nl</language> <!-- the language of the videos or other content the plugin provides, may be omitted in case the addon does not provide any content -->
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
     <website>https://github.com/Paul-VW/script.domoticz.scenes</website> <!-- the url of the website that contains the videos (or the official website of your plugin). May be omitted.  -->
