@@ -10,7 +10,7 @@ import json
 addon_handle = int(sys.argv[1])
 xbmcplugin.setContent(addon_handle, 'videos')
 addonID = 'script.domoticz.scenes'
-addonVersion = '0.0.8'
+addonVersion = '0.0.9'
 addonDate = "24 Maart 2021"
 
 __addon__ = xbmcaddon.Addon()

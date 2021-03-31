@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.domoticz.scenes" name="Domoticz Scenes" version="0.0.8" provider-name="Paul VW">
+<addon id="script.domoticz.scenes" name="Domoticz Scenes" version="0.0.9" provider-name="Paul VW">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
      <import addon="script.module.requests"   version="1.0.0"/>
