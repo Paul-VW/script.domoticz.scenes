@@ -18,6 +18,7 @@ __addonname__ = __addon__.getAddonInfo('name')
 __icon__ = __addon__.getAddonInfo('icon')
 __language__ = xbmcaddon.Addon().getLocalizedString
 
+# Get plugin settings
 DEBUG = xbmcaddon.Addon(id=addonID).getSetting('debug')
 
 if (DEBUG) == 'true':
