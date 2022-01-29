@@ -36,12 +36,12 @@ def get_base_url(host, port, useSsl, username, password):
 
     username64 = base64.b64encode(username.encode("utf-8"))
     password64 = base64.b64encode(password.encode("utf-8"))
-        
+
     if not username:
         setcreds = ""
     else:
         setcreds = 'username=' + str(username64.decode("utf-8")) + '&password=' + str(password64.decode("utf-8")) + '&'
-        
+
     url = base_url + "/json.htm?" + setcreds
     return url
 
@@ -101,14 +101,14 @@ def switch_dimmer(base_url, idx, state):
     url = base_url + "type=command&param=switchlight&idx=" + str(idx) + "&switchcmd=Set%20Level&level=" + state
     requests.get(url=url, verify=False)
 
+
 def get_list(optionsDict):
     end_list = __addon__.getLocalizedString(30499)
     optionsList = []
-
     optionsDict = filter(lambda x: x["Type"] == "Group" or x["Type"] == "Scene" or x["Type"] == "Light/Switch" or x["Type"] == "Color Switch", optionsDict)
 
     for line in optionsDict:
-       optionsList.append(line["Name"])
+        optionsList.append(line["Name"])
 
     optionsList.append(end_list)
     return optionsList
@@ -160,6 +160,7 @@ def get_favorites_idx(optionsDict, action):
 
 def run():
     end_list = __addon__.getLocalizedString(30499)
+
     if action != end_list:
         if str(domoticz_group) == "0":
             idx = get_idx(optionsDict=optionsDict, action=action)
@@ -178,4 +179,3 @@ def run():
         else:
             idx = get_idx(optionsDict=optionsDict, action=action)
             switch_switch(base_url=base_url, idx=idx)
-
