@@ -41,7 +41,8 @@ def get_base_url(host, port, useSsl, username, password):
         setcreds = ""
     else:
         setcreds = 'username=' + str(username64.decode("utf-8")) + '&password=' + str(password64.decode("utf-8")) + '&'
-        url = base_url + "/json.htm?" + setcreds
+        
+    url = base_url + "/json.htm?" + setcreds
     return url
 
 
